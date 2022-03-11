@@ -11,13 +11,15 @@ import {InputTextModule} from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {InputMaskModule} from 'primeng/inputmask';
+import { GamePageComponent } from './components/components/game-page/game-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
     SignUpComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    GamePageComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InputTextModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

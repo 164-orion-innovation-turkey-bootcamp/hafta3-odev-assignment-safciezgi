@@ -17,8 +17,8 @@ export class SignUpComponent implements OnInit {
 
     this.signUpForm = this.formBuilder.group({
       fullName:[''],
-      phone:[''],
       email:[''],
+      username:[''],
       passwd:['']
     })
 
@@ -29,6 +29,10 @@ export class SignUpComponent implements OnInit {
     console.log('tıklandı')
     this.http.post<any>("http://localhost:3000/signUpUsers", this.signUpForm.value).subscribe(res=>{
       alert('successfull');
+      this.signUpForm.reset();
+      this.router.navigate(['signIn']);
+    },err=>{
+      alert('Something went wrong!');
     })
 
 
