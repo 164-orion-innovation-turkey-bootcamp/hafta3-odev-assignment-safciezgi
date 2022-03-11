@@ -6,11 +6,14 @@
     <p class="title">Sign In</p>
     <ng-template pTemplate="header" >
     </ng-template>
-    <div [style]="{'margin-top': '2REM', 'margin-left': '20px'}">
+    <div [style]="{'margin-top': '2rem', 'margin-left': '20px'}">
       <span class="p-float-label">
       <h5>Username</h5>
         <input formControlName="username" id="float-input" placeholder="Username" type="text" pInputText/>
-        <!-- <span class="text-danger" *ngIf="username"></span> -->
+        <div>
+          <small class="text-danger " *ngIf="signInForm.get('username') && !signInForm.get('username')!.valid && signInForm.get('username')!.touched">Username is required!</small>
+        </div>  
+      <!-- <span class="text-danger" *ngIf="username"></span> -->
       <h5>Password</h5>
       <input formControlName="passwd" placeholder="Password" type="password" pInputText/>
       <!-- <span class="text-danger" *ngIf="passwd"></span> --> 
