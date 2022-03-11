@@ -1,0 +1,37 @@
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#button-position{
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  opacity: 0.9;
+}
+
+// ::ng-deep .p-button {
+//   // background: rgb(226, 131, 43);
+//   // border: rgb(241, 100, 6);
+
+//   background: rgb(255, 255, 255);
+//   border: 2px solid #000;
+
+// }
+
+
+

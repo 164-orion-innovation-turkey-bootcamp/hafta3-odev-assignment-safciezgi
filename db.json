@@ -1,0 +1,22 @@
+{
+  "posts": [],
+  "signUpUsers": [
+    {
+      "fullName": "ezgi",
+      "phone": "1452343254",
+      "email": "ezgi",
+      "passwd": "254532435",
+      "id": 1
+    },
+    {
+      "fullName": "test",
+      "phone": "123456789",
+      "email": "ezgi@mail",
+      "passwd": "123456215",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
