@@ -11,12 +11,24 @@
       <span class="p-float-label">
       <h5>Full Name</h5>
         <input formControlName="fullName" id="float-input" placeholder="Name & Surname" type="text" pInputText >
+        <div>
+          <small class="text-danger" *ngIf="signUpForm.get('fullName') && !signUpForm.get('fullName')!.valid && signUpForm.get('fullName')!.touched">Full Name is required!</small>
+        </div> 
         <h5>Username</h5>
         <input type="text" formControlName="username" id="float-input" placeholder="Username" pInputText>
+        <div>
+          <small class="text-danger" *ngIf="signUpForm.get('username') && !signUpForm.get('username')!.valid && signUpForm.get('username')!.touched">Username is required!</small>
+        </div> 
         <h5>Email Address</h5>
         <input formControlName="email" id="float-input" placeholder="Mail Address" type="email" pInputText >
+        <div>
+          <small class="text-danger" *ngIf="signUpForm.get('email') && !signUpForm.get('email')!.valid && signUpForm.get('email')!.touched">Email is required!</small>
+        </div>        
         <h5>Password</h5>
         <input formControlName="passwd" id="float-input" placeholder="Password" type="password" pInputText >
+        <div>
+          <small class="text-danger" *ngIf="signUpForm.get('passwd') && !signUpForm.get('passwd')!.valid && signUpForm.get('passwd')!.touched">Password is required!</small>
+        </div>      
       </span>
       <button [style]="{'margin-top': '25px'}" type="submit" class=" nes-btn is-primary" >Sign Up</button>
       <div [style]="{'margin-left': '20px', 'margin-top': '10px'}">

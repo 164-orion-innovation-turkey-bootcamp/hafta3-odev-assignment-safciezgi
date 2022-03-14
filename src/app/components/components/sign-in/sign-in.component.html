@@ -16,6 +16,9 @@
       <!-- <span class="text-danger" *ngIf="username"></span> -->
       <h5>Password</h5>
       <input formControlName="passwd" placeholder="Password" type="password" pInputText/>
+      <div>
+        <small class="text-danger" *ngIf="signInForm.get('passwd') && !signInForm.get('passwd')!.valid && signInForm.get('passwd')!.touched">Password is required!</small>
+      </div>
       <!-- <span class="text-danger" *ngIf="passwd"></span> --> 
     </span> 
     <!-- <span class="p-float-label">
